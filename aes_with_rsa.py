@@ -1,4 +1,4 @@
-import getpass
+
 import os
 
 from Crypto.Cipher import PKCS1_OAEP, AES
@@ -100,7 +100,6 @@ def decrypt_message():
     message = aes_cipher.decrypt_and_verify(cipher_text, tag)
     print('The decrypted message is: ')
     print(message.decode('utf-8'))
-
 
 
 def menu():
